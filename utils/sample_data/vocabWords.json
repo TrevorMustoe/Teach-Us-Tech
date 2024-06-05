@@ -1,0 +1,30 @@
+{
+  "-MiBsBKGWFEU-yluJkL-": {
+    "language_id": "JavaScript",
+    "firebaseKey": "-MiBsBKGWFEU-yluJkL-",
+    "description": "A Promise is a proxy for a value not necessarily known when the promise is created. It allows you to associate handlers with an asynchronous action's eventual success value or failure reason. This lets asynchronous methods return values like synchronous methods: instead of immediately returning the final value, the asynchronous method returns a promise to supply the value at some point in the future.",
+    "title": "Promises",
+    "uid": ""
+  },
+  "-MiBsknNSQ6aBG1-2lQS": {
+    "language_id": "CSS",
+    "firebaseKey": "-MiBsknNSQ6aBG1-2lQS",
+    "description": "If you use any attribute other than class or id to identify an element in a stylesheet, you would be using Attribute Selectors. You can also do basic pattern matching within an attribute selector (so if you would like to do basic pattern matching for selectors using class or ID attributes, you would want to use attribute selectors).",
+    "title": "Attribute Selector",
+    "uid": ""
+  },
+  "-MiBuCve4-r_H-RLUOh2": {
+    "language_id": "HTML",
+    "firebaseKey": "-MiBuCve4-r_H-RLUOh2",
+    "description": "",
+    "title": "The body is the container for all of a page’s content. Comes after the <head> tag, within the overall <html> tag.",
+    "uid": ""
+  },
+  "-MiBuU13EaKmGOMjJF-X": {
+    "language_id": "Python",
+    "firebaseKey": "-MiBuU13EaKmGOMjJF-X",
+    "description": "an instruction that causes the Python interpreter to display a value on the screen",
+    "title": "Print statement",
+    "uid": ""
+  }
+}
