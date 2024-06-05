@@ -2,10 +2,10 @@
 // import ViewDirectorBasedOnUserAuthStatus from '../utils/viewDirector';
 import 'bootstrap'; // import bootstrap elements and js
 import '../styles/main.scss';
-import signInScreen from '../pages/sign-in';
+import startApp from '../utils/sample_data/startApp';
 
 const init = () => {
-  signInScreen();
+  startApp();
 };
 
 init();
