@@ -5,6 +5,7 @@ import { getVocab } from '../../api/vocabData';
 import domEvents from '../../events/domEvents';
 import formEvents from '../../events/formEvents';
 import cardEvents from '../../events/cardEvents';
+import logoutButton from '../../components/logoutButton';
 
 const startApp = () => {
   domBuilder();
@@ -12,6 +13,7 @@ const startApp = () => {
   navBar();
   formEvents();
   cardEvents();
+  logoutButton();
   getVocab().then((vocabWords) => showVocab(vocabWords));
 };
 

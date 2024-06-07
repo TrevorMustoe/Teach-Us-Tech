@@ -5,9 +5,13 @@ import {
 import addVocabForm from '../components/forms/addVocab';
 import showVocab from '../pages/vocab';
 import clearDom from '../utils/clearDom';
+import { signOut } from '../utils/auth';
 
 const domEvents = () => {
   document.querySelector('#navigation').addEventListener('click', (e) => {
+    document.querySelector('#logout-button')
+      .addEventListener('click', signOut);
+    // this is user entry
     if (e.target.id.includes('create-entry')) {
       addVocabForm();
     }
