@@ -1,7 +1,7 @@
 import domBuilder from '../../components/shared/domBuilder';
 import navBar from '../../components/shared/navBar';
 import showVocab from '../../pages/vocab';
-import getVocab from '../../api/vocabData';
+import { getVocab } from '../../api/vocabData';
 import domEvents from '../../events/domEvents';
 
 const startApp = () => {
