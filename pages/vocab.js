@@ -1,6 +1,8 @@
+import clearDom from '../utils/clearDom';
 import renderToDOM from '../utils/renderToDom';
 
 const showVocab = (array) => {
+  clearDom();
   let domString = '';
   array.forEach((item) => {
     domString += `
@@ -10,8 +12,8 @@ const showVocab = (array) => {
         <h6 class="card-subtitle mb-2 text-muted">${item.language_id}</h6>
         <p>${item.description}</p>
         <hr>
-        <i class="fas fa-edit btn btn-info" id="update-author--${item.firebaseKey}"></i>
-        <i class="btn btn-danger fas fa-trash-alt" id="delete-author-btn--${item.firebaseKey}"></i>
+        <i class="btn btn-info" id="update-vocab--${item.firebaseKey}">Edit Card</i>
+        <i class="btn btn-danger" id="delete-author-btn--${item.firebaseKey}">Delete Card</i>
       </div>
     </div>
     `;
