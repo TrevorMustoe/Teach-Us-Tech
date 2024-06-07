@@ -82,7 +82,7 @@ const createVocab = (payload) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-// FIXME: GET SINGLE AUTHOR
+// FIXME: GET SINGLE Vocab
 const getSingleVocab = (firebaseKey) => new Promise((resolve, reject) => {
   fetch(`${endpoint}/vocabWords/${firebaseKey}.json`, {
     method: 'GET',
