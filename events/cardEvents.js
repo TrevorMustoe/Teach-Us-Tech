@@ -18,7 +18,6 @@ const cardEvents = () => {
     if (e.target.id.includes('edit-vocab')) {
       const [, firebaseKey] = e.target.id.split('--');
       getSingleVocab(firebaseKey).then((bookObj) => addVocabForm(bookObj));
-      // getSingleBook(firebaseKey).then(addBookForm); // using the callback method
     }
   });
 };
