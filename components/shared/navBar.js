@@ -15,6 +15,12 @@ const navBar = () => {
                 CREATE ENTRY <span class="sr-only">(current)</span>
               </a>
             </li>
+            <div class="main-container">
+  <button type="button" id="python" class="btn btn-outline-primary">Python</button>
+  <button type="button" id="javascript" class="btn btn-outline-secondary">JavaScript</button>
+  <button type="button" id="css" class="btn btn-outline-success">CSS</button>
+  <button type="button" id="html" class="btn btn-outline-info">HTML</button>
+  </div>
           </ul>
           <span class="navbar-text">
             <div id="cart-button"></div>
