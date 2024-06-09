@@ -27,7 +27,10 @@ https://www.loom.com/share/829b90d831ea441ba2db6bea724af210
 - [Wireframes](https://www.figma.com/design/IW4jF3GnzCFLYbEXlgFNIZ/MVP?node-id=0-1&t=0c72hbfRTRB2wTUi-0)
 - [ERD](https://dbdiagram.io/d/Vocab-YOU-REAL-662d16125b24a634d0f5743f)
 ## Project Screenshots <!-- These can be inside of your project. Look at the repos from class and see how the images are included in the readme -->
-<img width="1148" alt="Your Alt" src="">
+
+<img width="1508" alt="Screenshot 2024-06-09 at 11 03 02 AM" src="https://github.com/TrevorMustoe/TM-INDIVIDUAL-ASSESSMENT-vocab-YOU-lary/assets/113145432/4d2d3ca2-0d31-4005-a165-90aa2c8961fd">
+
+<img width="1507" alt="Screenshot 2024-06-09 at 11 23 34 AM" src="https://github.com/TrevorMustoe/TM-INDIVIDUAL-ASSESSMENT-vocab-YOU-lary/assets/113145432/7937349d-7c6a-4c60-9557-f9ca2acd31b3">
 
 ## Contributors
 - [Trevor Mustoe](https://github.com/TrevorMustoe)
