@@ -3,10 +3,42 @@
 
 
 body {
-  background-color: antiquewhite;
-  color: brown;
+  background-color: #FDDDC1;
   text-align: center;
   margin-top: 100px;
+  font-family: "Press Start 2P", system-ui;
+  font-size: 10px;
+}
+
+.cardSubtitle{
+  color: #FDDDC1!important;
+  font-weight: bold;
+}
+
+#cardTitle{
+  font-size: 15px;
+}
+
+#cardBR{
+  background-color: #82BEAB;
+  border-radius: 5%;
+  color: #18373F!important;
+  font-family: "Press Start 2P", system-ui;
+  font-size: 10px;
+}
+
+#navbarStyle{
+  background-color: #FF947F;
+  color: #18373F!important;
+  padding: 20px;
+}
+
+#cardBody{
+  background-color: #82BEAB;
+  border-radius: 5%;
+  color: #18373F!important;
+  font-family: "Press Start 2P", system-ui;
+  padding: 20px;
 }
 
 #store{
@@ -17,4 +49,96 @@ body {
   column-gap: 2%;
   row-gap: 10px;
   margin-top: 20px;
+}
+
+.btn1{
+  background-color: #FDDDC1;
+  border-radius: 5px;
+  padding: 3%;
+}
+
+.btn1:hover{
+  cursor: pointer;
+  background-color: #f9cba3;
+}
+
+.btn2{
+  background-color: #FF947F;
+  border-radius: 5px;
+  padding: 3%;
+}
+
+.btn2:hover{
+  cursor: pointer;
+  background-color: #fba999;
+}
+
+#logo2{
+  font-family: "Press Start 2P", system-ui;
+  color: #18373F;
+  font-size: 15px;
+}
+
+#logo:focus{
+  background-color: #82BEAB;
+}
+
+#google-auth{
+  font-size: 10px;
+}
+
+#logo{
+  background-color: #FDDDC1;
+  color: #18373F;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+#python{
+  background-color: #FDDDC1;
+  color: #18373F;
+  font-size: 10px;
+}
+
+#python:focus{
+  background-color: #82BEAB;
+}
+
+#javascript{
+  background-color: #FDDDC1;
+  color: #18373F;
+  font-size: 10px;
+}
+
+#javascript:focus{
+  background-color: #82BEAB;
+}
+
+#css{
+  background-color: #FDDDC1;
+  color: #18373F;
+  font-size: 10px;
+}
+
+#css:focus{
+  background-color: #82BEAB;
+}
+
+#html{
+  background-color: #FDDDC1;
+  color: #18373F;
+  font-size: 10px;
+}
+
+#html:focus{
+  background-color: #82BEAB;
+  color: #18373F;
+}
+
+#create-entry{
+  color: #FDDDC1;
+  background-color: #18373F;
+  border-radius: 5px;
+  margin-left: 25px;
+  margin-right: 25px;
 }

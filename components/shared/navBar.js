@@ -2,24 +2,25 @@ import renderToDOM from '../../utils/renderToDom';
 
 const navBar = () => {
   const domString = `
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark mb-5">
-    <div class="container-fluid">
-        <a class="navbar-brand title" href="" id="logo">Teach US Tech</a>
+    <nav class="navbar fixed-top navbar-expand-lg mb-5" id="navbarStyle">
+    <div class="container-fluid" id="containerFluid">
+        <a class="navbar-brand title" href="" id="logo2">Teach US Tech</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="unorderedList">
             <li class="nav-item active">
-              <a class="nav-link" href="#" id="create-entry">
+              <button class="nav-link" href="#" id="create-entry">
                 CREATE ENTRY <span class="sr-only">(current)</span>
-              </a>
+              </button>
             </li>
-            <div class="main-container">
-  <button type="button" id="python" class="btn btn-outline-primary">Python</button>
-  <button type="button" id="javascript" class="btn btn-outline-secondary">JavaScript</button>
-  <button type="button" id="css" class="btn btn-outline-success">CSS</button>
-  <button type="button" id="html" class="btn btn-outline-info">HTML</button>
+            <div class="main-container" id="mainContainer">
+  <button type="button" id="logo" class="btn">Show My Cards</button>
+  <button type="button" id="python" class="btn">Python</button>
+  <button type="button" id="javascript" class="btn">JavaScript</button>
+  <button type="button" id="css" class="btn">CSS</button>
+  <button type="button" id="html" class="btn">HTML</button>
   </div>
           </ul>
           <span class="navbar-text">

@@ -1,5 +1,5 @@
 import {
-  getJavascript, getPython, getCSS, getHTML
+  getJavascript, getPython, getCSS, getHTML, getVocab,
 }
   from '../api/vocabData';
 import addVocabForm from '../components/forms/addVocab';
@@ -7,29 +7,33 @@ import showVocab from '../pages/vocab';
 import clearDom from '../utils/clearDom';
 import { signOut } from '../utils/auth';
 
-const domEvents = () => {
+const domEvents = (user) => {
   document.querySelector('#navigation').addEventListener('click', (e) => {
     document.querySelector('#logout-button')
       .addEventListener('click', signOut);
     // this is user entry
     if (e.target.id.includes('create-entry')) {
-      addVocabForm();
+      addVocabForm(user);
+    }
+    if (e.target.id.includes('logo')) {
+      clearDom();
+      getVocab(user).then((vocabWords) => showVocab(vocabWords));
     }
     if (e.target.id.includes('python')) {
       clearDom();
-      getPython().then((vocabWords) => showVocab(vocabWords));
+      getPython(user).then((vocabWords) => showVocab(vocabWords));
     }
     if (e.target.id.includes('javascript')) {
       clearDom();
-      getJavascript().then((vocabWords) => showVocab(vocabWords));
+      getJavascript(user).then((vocabWords) => showVocab(vocabWords));
     }
     if (e.target.id.includes('css')) {
       clearDom();
-      getCSS().then((vocabWords) => showVocab(vocabWords));
+      getCSS(user).then((vocabWords) => showVocab(vocabWords));
     }
     if (e.target.id.includes('html')) {
       clearDom();
-      getHTML().then((vocabWords) => showVocab(vocabWords));
+      getHTML(user).then((vocabWords) => showVocab(vocabWords));
     }
   });
 };

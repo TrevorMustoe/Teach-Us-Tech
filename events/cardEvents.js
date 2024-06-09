@@ -2,7 +2,7 @@ import { deleteSingleVocab, getSingleVocab, getVocab } from '../api/vocabData';
 import addVocabForm from '../components/forms/addVocab';
 import showVocab from '../pages/vocab';
 
-const cardEvents = () => {
+const cardEvents = (user) => {
   document.querySelector('#store').addEventListener('click', (e) => {
     // TODO: CLICK EVENT FOR DELETING A BOOK
     if (e.target.id.includes('delete-vocab')) {
@@ -10,7 +10,7 @@ const cardEvents = () => {
       if (window.confirm('Want to delete?')) {
         const [, firebaseKey] = e.target.id.split('--');
         deleteSingleVocab(firebaseKey).then(() => {
-          getVocab().then(showVocab);
+          getVocab(user).then(showVocab);
         });
       }
     }
