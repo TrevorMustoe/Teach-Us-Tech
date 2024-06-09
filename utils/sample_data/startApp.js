@@ -7,14 +7,14 @@ import formEvents from '../../events/formEvents';
 import cardEvents from '../../events/cardEvents';
 import logoutButton from '../../components/logoutButton';
 
-const startApp = () => {
-  domBuilder();
-  domEvents();
+const startApp = (user) => {
+  domBuilder(user);
+  domEvents(user);
   navBar();
-  formEvents();
-  cardEvents();
+  formEvents(user);
+  cardEvents(user);
   logoutButton();
-  getVocab().then((vocabWords) => showVocab(vocabWords));
+  getVocab(user).then((vocabWords) => showVocab(vocabWords));
 };
 
 export default startApp;

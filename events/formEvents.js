@@ -1,7 +1,7 @@
 import { createVocab, getVocab, updateVocab } from '../api/vocabData';
 import showVocab from '../pages/vocab';
 
-const formEvents = () => {
+const formEvents = (user) => {
   document.querySelector('#form-container').addEventListener('submit', (e) => {
     e.preventDefault();
     // TODO: CLICK EVENT FOR SUBMITTING FORM FOR ADDING A BOOK
@@ -10,11 +10,12 @@ const formEvents = () => {
         title: document.querySelector('#title').value,
         description: document.querySelector('#description').value,
         language_id: document.querySelector('#language').value,
+        uid: user.uid
       };
       createVocab(payload).then(({ name }) => {
         const patchPayload = { firebaseKey: name };
         updateVocab(patchPayload).then(() => {
-          getVocab().then(showVocab);
+          getVocab(user).then(showVocab);
         });
       });
     }
@@ -29,7 +30,7 @@ const formEvents = () => {
         firebaseKey,
       };
       updateVocab(payload).then(() => {
-        getVocab().then(showVocab);
+        getVocab(user).then(showVocab);
       });
     }
   });

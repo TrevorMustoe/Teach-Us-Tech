@@ -6,14 +6,14 @@ const showVocab = (array) => {
   let domString = '';
   array.forEach((item) => {
     domString += `
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">${item.title}</h5>
-        <h6 class="card-subtitle mb-2 text-muted">${item.language_id}</h6>
+    <div class="card" style="width: 18rem;" id="cardBR">
+      <div class="card-body" id="cardBody">
+        <h5 class="card-title" id="cardTitle">${item.title}</h5>
+        <h6 class="cardSubtitle" id="langauge2">${item.language_id}</h6>
         <p>${item.description}</p>
         <hr>
-        <i class="btn btn-info" id="edit-vocab--${item.firebaseKey}">Edit Card</i>
-        <i class="btn btn-danger" id="delete-vocab--${item.firebaseKey}">Delete Card</i>
+        <i class="btn1" id="edit-vocab--${item.firebaseKey}">Edit Card</i>
+        <i class="btn2" id="delete-vocab--${item.firebaseKey}">Delete Card</i>
       </div>
     </div>
     `;

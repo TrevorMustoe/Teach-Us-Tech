@@ -1,18 +1,24 @@
 import client from '../utils/client';
-// API CALLS FOR BOOKS
+// API CALLS FOR Vocab
 
 const endpoint = client.databaseURL;
 
 // TODO: GET Vocab
-const getVocab = () => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/vocabWords.json`, {
+const getVocab = (user) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocabWords.json?orderBy="uid"&equalTo="${user.uid}"`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
     },
   })
     .then((response) => response.json())
-    .then((data) => resolve(Object.values(data)))
+    .then((data) => {
+      if (data) {
+        resolve(Object.values(data));
+      } else {
+        resolve([]);
+      }
+    })
     .catch(reject);
 });
 
@@ -68,7 +74,7 @@ const getHTML = () => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-// FIXME: CREATE AUTHOR
+// FIXME: CREATE Vocab Card
 const createVocab = (payload) => new Promise((resolve, reject) => {
   fetch(`${endpoint}/vocabWords.json`, {
     method: 'POST',
@@ -95,7 +101,7 @@ const getSingleVocab = (firebaseKey) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-// FIXME: DELETE AUTHOR
+// FIXME: DELETE Vocab Card
 const deleteSingleVocab = (firebaseKey) => new Promise((resolve, reject) => {
   fetch(`${endpoint}/vocabWords/${firebaseKey}.json`, {
     method: 'DELETE',
@@ -108,7 +114,7 @@ const deleteSingleVocab = (firebaseKey) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-// FIXME: UPDATE AUTHOR
+// FIXME: UPDATE Vocab Card
 const updateVocab = (payload) => new Promise((resolve, reject) => {
   fetch(`${endpoint}/vocabWords/${payload.firebaseKey}.json`, {
     method: 'PATCH',
