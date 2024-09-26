@@ -19,7 +19,7 @@ Teach is Tech is a brand new learning platform that will change the way coding s
 - Each user can delete thier own card or other's cards as well
 
 
-## Video Walkthrough of APP NAME <!-- A loom link is sufficient -->
+## Video Walkthrough <!-- A loom link is sufficient -->
 COMING SOON!!
 
 ## Relevant Links <!-- Link to all the things that are required outside of the ones that have their own section -->
